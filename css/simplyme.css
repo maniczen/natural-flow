@@ -1,0 +1,36 @@
+.bg-1{
+   background-color: #1abc9c; /* Vihreä */
+   color: #ffffff;
+}
+
+.bg-2{
+background-color: #474e5d; /* Dark Blue */
+   color: #ffffff;
+}
+   
+.bg-3{
+background-color: #ffffff; /* Valkoinen */
+   color: #555555
+}
+
+.bg-4{
+background-color: #2f2f2f; 
+   color: #ffffff; 
+}
+   
+.container-fluid{
+    padding-top 70px;
+	padding-bottom 70px;
+}
+
+.navbar{
+   padding-top: 15px
+   padding-bottom: 15 px
+   border: 0;
+   border-radius: 0;
+   margin-bottom: 0;
+   font-size: 12px;
+   letter-space: 5px;
+   
+}
+   
