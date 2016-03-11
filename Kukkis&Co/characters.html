@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TMNT</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+   <link href="css/movies.css" rel="stylesheet" type="text/css">
+  <style>
+    .jumbotron {
+      background: url(images/pizza_bg.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 186px;
+      margin: auto;
+      -webkit-filter: grayscale(40%);
+      filter: grayscale(40%);
+      margin-bottom: 50;
+      box-shadow: 0 0 30px black;
+      padding:0 15px 0 15px;
+    }
+	 .carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+      width: 80%;
+      margin: auto;
+	  height:20%;
+	 }
+	div.carousel {
+	 width: 100%;
+	 height:100%;
+	 background-color:#003300;
+	 margin-top:50px;
+	 
+	}
+	.leo {
+	  padding: 10px;
+    background-color:#005ce6;
+	height:600px;
+	border-radius: 25px;}
+	.don {
+	height:600px;
+	padding: 10px;
+	background-color:#800060;
+	border-radius: 25px;}
+	.raf {
+	padding: 10px;
+	height:600px;
+	background-color:#cc0000;
+	border-radius: 25px;}
+	.mic{
+	padding: 10px;
+	height:620px;
+	background-color:#e65c00;
+	border-radius: 25px;
+	}
+	body{
+padding-bottom: 100px;
+
+}
+	 
+	 
+	.fa-arrow-left{ width:50%;
+    position:relative;
+    top:50%;
+	
+	
+	
+	}
+	.fa-arrow-right{ width:50%;
+    position: relative;
+    top:50%;
+	}
+	.container-fluid{ 
+				padding-top: 5px;
+				padding-bottom: 70px;
+	}
+	h1 {
+	text-align:center;
+	text-shadow: 2px 2px #e6ffff;
+	font-family:Algerian;
+	}
+	p {
+	letter-spacing: 2px;
+	text-align:left;
+	}
+	h3 {
+	text-shadow: 1px 1px #e6ffff;
+	}
+
+
+  </style>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="TMNT" />
+  <meta name="msapplication-TileColor" content="#146600" />
+  <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <center>
+      <img src="images/tmnt_logo.png" width="40%" height="40%">
+    </center>
+  </div>
+
+   <div id="contentWrapper">
+    <div id="contentLeft">
+      <ul id="leftNavigation">
+        <li class="active"> <a href="index.html"><i class="fa fa-info-circle leftNavIcon"></i> About TMNT</a>
+          <ul>
+            <li> <a href="index.html#history"><i class="fa fa-angle-right leftNavIcon"></i> TMNT History</a> </li>
+            <li> <a href="index.html#contact"><i class="fa fa-angle-right leftNavIcon"></i> Contact the Turtles</a> </li>
+            <li> <a href="index.html#team"><i class="fa fa-angle-right leftNavIcon"></i> The TMNT Team</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="characters.html"><i class="fa fa-male leftNavIcon"></i> Characters</a>
+          <ul>
+            <li> <a href="characters.html#leonardo"><i class="fa fa-angle-right leftNavIcon"></i> Leonardo</a> </li>
+            <li> <a href="characters.html#donatello"><i class="fa fa-angle-right leftNavIcon"></i> Donatello</a> </li>
+            <li> <a href="characters.html#rafaello"><i class="fa fa-angle-right leftNavIcon"></i> Rafaello</a> </li>
+            <li> <a href="characters.html#michelangelo"><i class="fa fa-angle-right leftNavIcon"></i> Michelangelo</a> </li>
+            <li> <a href="characters.html#turtletest"><i class="fa fa-question leftNavIcon"></i> Test which Turtle are you</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="comics.html"><i class="fa fa-book leftNavIcon"></i> Comics</a>
+          <ul>
+            <li> <a href="comics.html#80s"><i class="fa fa-angle-right leftNavIcon"></i> 1980's</a> </li>
+            <li> <a href="comics.html#90s"><i class="fa fa-angle-right leftNavIcon"></i> 1990's</a> </li>
+            <li> <a href="comics.html#2ks"><i class="fa fa-angle-right leftNavIcon"></i> 2000 -></a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="movies.html"><i class="fa fa-film leftNavIcon"></i> Movies</a>
+          <ul>
+            <li> <a href="movies.html#1stmovies"><i class="fa fa-angle-right leftNavIcon"></i> First trilogy</a> </li>
+            <li> <a href="movies.html#newmovies"><i class="fa fa-angle-right leftNavIcon"></i> New movies</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="tv.html"><i class="fa fa-tv leftNavIcon"></i> TV</a>
+          <ul>
+            <li> <a href="tv.html#tmntseries"><i class="fa fa-angle-right leftNavIcon"></i> Teenage Mutant Ninja Turtles Shows</a> </li>
+            <li> <a href="tv.html#otherseries"><i class="fa fa-angle-right leftNavIcon"></i> Other Series</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="games.html"><i class="fa fa-gamepad leftNavIcon"></i> Games</a>
+        </li>
+    </div>
+    <div id="contentRight">
+
+	<div id="characters">
+	<section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+	<h1 class='headerstyle'> CHARACTERS</h1>
+	<p>
+	<br>Leonardo (named after Leonardo Da Vinci) - Blue<br>
+	<br>Donatello (named after Donato di Niccolò di Betto Bardi) - Purple<br>
+	<br>Michelangelo (named after Michelangelo di Lodovico Buonarroti Simoni) - Orange<br>
+	<br>Raphael (named after Raphael Sanzio) - Red<br>
+
+	<br>Originally, in the comics all of the turtles' bandannas were red. The only way for readers to tell them apart was by the weapon they were holding (Leonardo - pair of ninjaken ("ninja katanas"), Donatello - bo staff, Michelangelo - pair of nunchaku, Raphael - pair of sai). <br></p>
+	</section>
+	
+	</div>
+	
+	<div id="leonardo">
+	<h1 class='headerstyle'> LEONARDO</h1>
+	 <div class="container-fluid  text-center">
+     <div class="row">
+	 
+		<div class="leo col-sm-3">
+		<section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+		<h3>Description </h3>
+      <p>The leader of the Turtles, Leonardo aspires to be a brave, decisive, perfect hero. Unfortunately, he's an inexperienced teen (for the moment at least) with three smart-aleck brothers. It's the gap between his aspiration and current situation that is the greatest source of frustration in Leo's life. He's the most driven of the four Turtles, training and studying relentlessly. He tends to be hard on himself, but his diligence does not go unnoticed; he is the favored student of Splinter, whose approval he very much craves.</ </p>
+	  </div>
+	 </section>
+	
+	<div class="col-sm-6">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/leonardo//leo1.jpg" alt="Leonardo">
+      </div>
+
+      <div class="item">
+        <img src="images/leonardo/leo2.jpg" alt="Leonardo">
+      </div>
+    
+      <div class="item">
+        <img src="images/leonardo/leo3.jpg" alt="Leonardo">
+      </div>
+
+      <div class="item">
+        <img src="images/leonardo/leo4.jpg" alt="Leonardo">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="fa fa-arrow-left"  aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="fa fa-arrow-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	 
+	</div>
+
+	 
+	 <div class="leo col-sm-3">
+	 <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+	 <h3>Appearance</h3>
+      <p>Leo is an emerald green colored mutant turtle with sapphire blue eyes. He wears a blue mask where the tails length range between Donnie and Mikey's. Like Raph, Leo doesn't have much changes to his physical appearance like all his previous incarnations, except for the fact that his green skin is slightly darker than the others. His height ranges between Raph and Donnie's. He is lean, looks more mysterious and is handsome and or charming. </p>
+	  </section>
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+	 
+	 	 <div id="donatello">
+	 	<h1 class='headerstyle'> DONATELLO</h1>
+	 <div class="container-fluid  text-center">
+     <div class="row">
+		<div class="don col-sm-3">
+		<section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+		<h3>Description </h3>
+      <p>Donatello is the team inventor and weaponeer. He creates all their gadgets from the simplest bo-staff to their incredible vehicles. He's utterly brilliant, able to cobble together fantastic stuff from things he's literally scrounged from a trash heap. He's obsessively detail-oriented and often impatient that his brothers can't keep up with him intellectually. But Donnie also happens to be the most reclusive and socially awkward of the Turtles - especially when April is on her way! </ </p>
+	  </section>
+	  </div>
+	
+	<div class="col-sm-6">
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+      <li data-target="#myCarousel2" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/donatello/don1.jpg" alt="Donatello">
+      </div>
+
+      <div class="item">
+        <img src="images/donatello/don2.jpg" alt="Donatello">
+      </div>
+    
+      <div class="item">
+        <img src="images/donatello/don3.jpg" alt="Donatello">
+      </div>
+
+      <div class="item">
+        <img src="images/donatello/don4.jpg" alt="Donatello">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+      <span class="fa fa-arrow-left"  aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+      <span class="fa fa-arrow-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	 
+	</div>
+
+	 
+	 <div class="don col-sm-3">
+	 <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+	 <h3>Appearance</h3>
+      <p>Donnie is a mutated turtle with brownish green skin. Unlike all his previous incarnations, Donnie has a gap in between his teeth. Like most incarnations, he wears a purple mask where the tails of the mask are longer than any of his brothers, except for Raph's. Unlike previous incarnations, he is tall and thin with brown/red eyes. His quiet and shy nature gives him a more professional look, which comes across as the strong silent type. He is good with machines and has a talent for making new technology for his brothers. But there's one thing he hasn't gotten right... getting April to notice him. </p>
+	  </section>
+	  </div>
+	  </div>
+	  </div>
+	 </div>
+	
+	 
+	 <div id="rafaello">
+	 <h1 class='headerstyle'> RAFAELLO</h1>
+	 <div class="container-fluid  text-center">
+     <div class="row">
+		<div class="raf col-sm-3">
+		<section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+		<h3>Description </h3>
+      <p>Raphael is the most violent of the four brothers. A straight-up brawler, he has very little patience for things like stealth, hiding in shadows, or keeping his voice down. While he's fiercely loyal to his brothers, he's also often the one giving them a hard time. Raphael is also the one most likely to strike out on his own when he feels slighted or underappreciated. His closest confidante was his pet turtle named Spike. Raphael's temper can get the better of him, causing him to get into situations over his head. </p>
+	  </section>
+	  </div>
+	
+	<div class="col-sm-6">
+      <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel3" data-slide-to="1"></li>
+      <li data-target="#myCarousel3" data-slide-to="2"></li>
+      <li data-target="#myCarousel3" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/rafaello/raf1.jpg" alt="Rafaello">
+      </div>
+
+      <div class="item">
+        <img src="images/rafaello/raf2.jpg" alt="Rafaello">
+      </div>
+    
+      <div class="item">
+        <img src="images/rafaello/raf3.jpg" alt="Rafaello">
+      </div>
+
+      <div class="item">
+        <img src="images/rafaello/raf4.jpg" alt="Rafaello">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+      <span class="fa fa-arrow-left"  aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+      <span class="fa fa-arrow-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	 
+	</div>
+
+	 
+	 <div class="raf col-sm-3">
+	 <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+	 <h3>Appearance</h3>
+      <p>Raph is a kelly green mutant, ninja turtle, with goo green eye color and is the third-oldest. Like Leo, Raph doesn't have any changes to his physical appearance beyond the style of animation. He is much more like his other incarnations. There are several scratches and chips on his shell; a lightening bolt shaped crack/missing-chunk on the right corner of his plastron (He probably got it when he was a baby turtle as it was there during his mutation); and his red mask is very worn with long, tattered tails - all of which indicating his reckless side. He is "ruggedly handsome" as turtles go. </p>
+	  </section>
+	  
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+	
+	 
+	   
+	<div id="michelangelo">
+	<h1 class='headerstyle'> MICHELANGELO</h1>
+	 <div class="container-fluid  text-center">
+     <div class="row">
+		<div class="mic col-sm-3">
+		<section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+		<h3>Description </h3>
+      <p>Physically the smallest of the Turtles and the least mature. Mikey is easily distracted and enthusiastic about... well, pretty much everything. He's also extremely creative. He has a thousand ideas, and every now and then, one of them will be brilliant. This combination of creativity and lack of focus gives him a kind of "flow" that the other Turtles cannot match. He's a social mutant and more than the others, pines to be part of the real world.. </ </p>
+	  </div>
+	</section>
+	<div class="col-sm-6">
+      <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel4" data-slide-to="1"></li>
+      <li data-target="#myCarousel4" data-slide-to="2"></li>
+      <li data-target="#myCarousel4" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/michelangelo/mic1.jpg" alt="Michelangelo">
+      </div>
+
+      <div class="item">
+        <img src="images/michelangelo/mic2.jpg" alt="Michelangelo">
+      </div>
+    
+      <div class="item">
+        <img src="images/michelangelo/mic3.jpg" alt="Michelangelo">
+      </div>
+
+      <div class="item">
+        <img src="images/michelangelo/mic4.jpg" alt="Michelangelo">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+      <span class="fa fa-arrow-left"  aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+      <span class="fa fa-arrow-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	 
+	</div>
+
+	 
+	 <div class="mic col-sm-3">
+	 <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+	 <h3>Appearance</h3>
+      <p>Mikey is a light green Mutant ninja turtle. Unlike all of his previous incarnations, Mikey has freckles. Like all in incarnations, however, he wears an orange mask, though like his 1987 and 2003 incarnations, the tails of his mask are shorter. Mikey is shorter than his brothers and is considerably shorter than Donatello. Mikey also seems to be a little more pudgy than his brothers. The animators gave Mikey baby blue eyes to make him look slightly more 'innocent'. However, like all of the Turtles when they're in combat,the pupils and irises vanish from his eyes, leaving him with plain white bits, which are similar to that of the 2003 incarnations </p>
+	  </section>
+	  
+	  </div>
+	  </div>
+	  </div>
+	 </div><!---/row--->
+	 <div id="turtletest">
+	 <h1 class='headerstyle'>Teenage Mutant Ninja Turtles</h1>
+
+		<form method="post" action="turtleresults.php">
+			Do you like pizza!?<br>
+			<input type="radio" name="pitsa" value="kylla" checked>Yes<br>
+			<input type="radio" name="pitsa" value="ei">No<br>
+			<input type="radio" name="pitsa" value="eos">IDK<br>
+			<br><br>
+			If you like pizza, what kind do you like?<br>
+			<input type="radio" name="tayte" value="salami" checked>Salami<br>
+			<input type="radio" name="tayte" value="kermavaahto">Whipped cream!<br>
+			<input type="radio" name="tayte" value="ei">I still don't like pizza<br>
+			<br><br>
+			Do you consider yourself smart?<br>
+			<input type="radio" name="fiksu" value="kylla" checked>Yes<br>
+			<input type="radio" name="fiksu" value="ei">No<br>
+			<input type="radio" name="fiksu" value="eos">Maybe<br>
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+		</div>
+	 </div>
+	  </div>
+	  
+	
+	
+	
+
+
+</body>
+
+</html>
+<script>
+  $(document).ready(function() {
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function() {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    });
+  })
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/VerticalNavigation.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/jquery.nail.min.js">

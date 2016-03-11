@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>TMNT</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+        <link href="css/movies.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <style>
+            .jumbotron {
+                background: url(images/pizza_bg.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                width: 100%;
+                height: 186px;
+                margin: auto;
+                -webkit-filter: grayscale(40%);
+                filter: grayscale(40%);
+                margin-bottom: 50;
+                box-shadow: 0 0 30px black;
+                padding:0 15px 0 15px;
+            }
+        </style>
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+        <meta name="application-name" content="TMNT" />
+        <meta name="msapplication-TileColor" content="#146600" />
+        <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+
+    </head>
+
+    <body>
+
+        <div class="jumbotron">
+            <center>
+                <img src="images/tmnt_logo.png" width="40%" height="40%">
+            </center>
+        </div>
+
+        <div id="contentWrapper">
+            <div id="contentLeft">
+                <ul id="leftNavigation">
+                    <li class="active"> <a href="index.html"><i class="fa fa-info-circle leftNavIcon"></i> About TMNT</a>
+                        <ul>
+                            <li> <a href="index.html#history"><i class="fa fa-angle-right leftNavIcon"></i> TMNT History</a> </li>
+                            <li> <a href="index.html#contact"><i class="fa fa-angle-right leftNavIcon"></i> Contact the Turtles</a> </li>
+                            <li> <a href="index.html#team"><i class="fa fa-angle-right leftNavIcon"></i> The TMNT Team</a> </li>
+                        </ul>
+                    </li>
+                    <li class="active"> <a href="characters.html"><i class="fa fa-male leftNavIcon"></i> Characters</a>
+                        <ul>
+                            <li> <a href="characters.html#leonardo"><i class="fa fa-angle-right leftNavIcon"></i> Leonardo</a> </li>
+                            <li> <a href="characters.html#donatello"><i class="fa fa-angle-right leftNavIcon"></i> Donatello</a> </li>
+                            <li> <a href="characters.html#rafaello"><i class="fa fa-angle-right leftNavIcon"></i> Rafaello</a> </li>
+                            <li> <a href="characters.html#michelangelo"><i class="fa fa-angle-right leftNavIcon"></i> Michelangelo</a> </li>
+                            <li> <a href="characters.html#turtletest"><i class="fa fa-question leftNavIcon"></i> Test which Turtle are you</a> </li>
+                        </ul>
+                    </li>
+                    <li class="active"> <a href="comics.html"><i class="fa fa-book leftNavIcon"></i> Comics</a>
+                        <ul>
+                            <li> <a href="comics.html#80s"><i class="fa fa-angle-right leftNavIcon"></i> 1980's</a> </li>
+                            <li> <a href="comics.html#90s"><i class="fa fa-angle-right leftNavIcon"></i> 1990's</a> </li>
+                            <li> <a href="comics.html#2ks"><i class="fa fa-angle-right leftNavIcon"></i> 2000 -></a> </li>
+                        </ul>
+                    </li>
+                    <li class="active"> <a href="movies.html"><i class="fa fa-film leftNavIcon"></i> Movies</a>
+                        <ul>
+                            <li> <a href="movies.html#1stmovies"><i class="fa fa-angle-right leftNavIcon"></i> First trilogy</a> </li>
+                            <li> <a href="movies.html#newmovies"><i class="fa fa-angle-right leftNavIcon"></i> New movies</a> </li>
+                        </ul>
+                    </li>
+                    <li class="active"> <a href="tv.html"><i class="fa fa-tv leftNavIcon"></i> TV</a>
+                        <ul>
+                            <li> <a href="tv.html#tmntseries"><i class="fa fa-angle-right leftNavIcon"></i> Teenage Mutant Ninja Turtles Shows</a> </li>
+                            <li> <a href="tv.html#otherseries"><i class="fa fa-angle-right leftNavIcon"></i> Other Series</a> </li>
+                        </ul>
+                    </li>
+                    <li class="active"> <a href="games.html"><i class="fa fa-gamepad leftNavIcon"></i> Games</a>
+                    </li>
+
+
+            </div>
+            <div id="contentRight">
+                <div class="row">
+                    <h1 class="headerstyle">Teenage Mutant Ninja Turtles Movies</h1>
+                    <div class="col-lg-2"></div>
+                    <div class='col-lg-8'>
+                        <p class="leipateksti" style='font-size: 150%'>Teenage Mutant Ninja Turtles consist of two different categories of live-action movies.
+                        <p class="leipateksti" style='font-size: 150%'>The first three movies, known as "The Original Trilogy" consist of three movies, released between 1990 and 1993</p>
+                        <p class="leipateksti" style='font-size: 150%'>Two newer movies consist of two live-action films. The first one, a reboot of the original series, named similarly "Teenage Mutant Ninja Turtles"
+                            was released in 2014. The other movie is scheduled to be released in 2016. The main differences are the advances in technology which make it possible to use more computer animated effects and characters in the films.
+                            The looks of turtles are also quite drastically different from the original films.</p>
+                        <p class="leipateksti" style='font-size: 150%'>To see the original trilogy, click "First trilogy" on the sidebar. For the newer movies, click "New Movies" Thanks! Turtletastic!</p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <h1 class="headerstyle" style="font-size: 300%; color: #4fb04f; font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; margin-top: 10em" >THE ORIGINAL TRILOGY</h1>
+
+
+                <article style="margin-top: 10em"id="1stmovies">
+                    <h1 class="headerstyle">
+                        Teenage Mutant Ninja Turtles (1990)
+                    </h1>
+
+                    <div class="row">
+                        <div class='col-lg-4'></div>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#juliste">
+                            <img src="images/movies/Turtles-1990_.jpg">
+                        </button>
+
+                        <div class="modal fade" id="juliste" tabindex="-1" role="dialog" aria-labelledby="#MyModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="MyModalLabel" style='text-align: center'>Teenage Mutant Ninja Turtles</h4>
+
+                                    </div>
+                                    <div class="modal-body" style='text-align: center'>
+                                        <img src="images/movies/Turtles-1990_.jpg"></>
+                                        <p></p>
+                                        <p>The widescreen debut of our green friends!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <p></p>
+
+
+                        <div class="row">
+
+                            <p></p>
+                            <p></p>
+                            <div class="col-lg-4"></div>
+
+                            <div class='col-lg-7'>
+                                <table class="table table-bordered" style="width:50%; font-family: Arial; color: #f7ecb5">
+
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: left"><b>Ratings</b></td>
+                                            <td>IMDB: 6.7 / 10.0 
+                                            </td>
+                                            <td>Rotten Tomatoes: 3.3 / 5</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left"><b>Budget</b></td>
+                                            <td colspan="2">$13 500 000 </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left"><b>Release date</b></td>
+                                            <td>March 30th</td>
+                                            <td>1990</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-lg-2"></div>
+                            <div class='col-lg-8'>
+                                <p class='leipateksti'><i><b>Plot and description taken from <a href="http://turtlepedia.wikia.com/wiki/Teenage_Mutant_Ninja_Turtles_(1990_film)">Turtlepedia.com</a></i></b></p>
+
+                                <p class='leipateksti'>Teenage Mutant Ninja Turtles is a 1990 American live-action 
+                                    film adaptation of the Teenage Mutant Ninja Turtles franchise directed by Steve Barron. The film was followed by three sequels: Teenage Mutant Ninja Turtles II: The Secret of the Ooze in 1991, Teenage Mutant Ninja Turtles III in 1993, and TMNT in 2007. 
+                                    This film presents the origin story of Splinter and the Turtles, the initial meeting between them, April O'Neil and Casey Jones, and their first confrontation with The Shredder and his Foot Clan. The film is distributed by New Line Cinema and outside the United States is internationally distributed by Golden Harvest.
+                                </p>
+                                <p class="leipateksti">When the New York City Police Department is unable to stop a severe crime wave caused by the Foot Clan, four vigilantes — Leonardo, Michaelangelo, Donatello and Raphael — come forth to save the city. Under the leadership of Splinter and together with their new-found allies April O'Neil and Casey Jones, 
+                                    they fight back and take the battle to The Shredder. The film kept very close to the dark feel of the original comics, with several elements also taken from the animated series that was airing at the time, such as April being a news reporter, and the turtles having different-colored masks, as opposed to the uniform red masks of the comic. 
+                                    The film was the highest-grossing independent film of all time when it was released, 
+                                    and became the ninth highest grossing film worldwide of 1990 and the most successful film in the franchise.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 25px;">
+                            <div class='col-lg-2'></div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal2">
+                                    <img src="images/movies/Turtles-1990_1.jpg" style="width: 200px; height: 200px;"></button>
+                                </button>
+                            </div>
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva1">
+                                    <img src="images/movies/Turtles-1990_3.jpg" style="width: 200px; height: 200px;">
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva2">
+                                <img src="images/movies/Turtles-1990_2.jpg" style="width: 200px; height: 200px">
+                            </button>
+
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style='text-align: center'>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                        </div>
+                                        <div class="modal-body" style='text-align: center'>
+                                            <img src="images/movies/Turtles-1990_1.jpg"></>
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="leffakuva1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style='text-align: center'>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1990_3.jpg" style="width: 100%"></>
+
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style='text-align: center'>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                    </div>
+                                    <div class="modal-body" style='text-align: center'>
+                                        <img src="images/movies/Turtles-1990_2.jpg"></>
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h1 class="headerstyle" style='margin-top: 10em;'>
+                        Teenage Mutant Ninja Turtles II: The Secret of the Ooze (1991)
+                    </h1>
+
+                    <div class="row">
+                        <div class='col-lg-4'></div>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#juliste2">
+                            <img src="images/movies/Turtles-1991_.jpg">
+                        </button>
+
+                        <div class="modal fade" id="juliste2" tabindex="-1" role="dialog" aria-labelledby="#MyModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="MyModalLabel" style='text-align: center'>Teenage Mutant Ninja Turtles II: The Secret of the Ooze (1991)</h4>
+
+                                    </div>
+                                    <div class="modal-body" style='text-align: center'>
+                                        <img src="images/movies/Turtles-1991_.jpg"></>
+                                        <p></p>
+                                        <p>The second time our green friends have made the widescreen!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <p></p>
+
+                        <div class="row">
+
+                            <p></p>
+                            <p></p>
+                            <div class="col-lg-4"></div>
+                            <div class='col-lg-7'>
+                                <table class="table table-bordered" style="width: 50%; font-family: Arial; color: #f7ecb5">
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: left"><b>Ratings</b></td>
+                                            <td>IMDB: 6.0 / 10</td>
+                                            <td>Rotten Tomatoes: 3.1 / 5.0 </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left"><b>Budget</b></td>
+                                            <td colspan="2">$25,000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left"><b>Release date</b></td>
+                                            <td>March 22nd</td>
+                                            <td>1991</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class='col-lg-2'></div>
+                        <div class='col-lg-8'>
+
+                            <p class='leipateksti'><i><b>Plot and description taken from <a href="http://turtlepedia.wikia.com/wiki/Teenage_Mutant_Ninja_Turtles_II:_The_Secret_of_the_Ooze">Turtlepedia.com</a></i></b></p>
+
+                            <p class='leipateksti'>Teenage Mutant Ninja Turtles II: The Secret of the Ooze was the second TMNT movie produced and follows the further adventures of the four Turtles: 
+                                Leonardo, Donatello, Michaelangelo, Raphael and their Master Splinter. Roughly resuming from the events of the last film, the villain, Shredder, 
+                                returns to take back command of the Foot Clan, and work towards getting revenge on the Turtles.
+                                When he learns the secret behind the Turtles's mutation, he becomes more dangerous than ever. The film sheds some light on the origins of Splinter and the Turtles, 
+                                as well as introduces two new villains: Tokka and Rahzar. </p>
+                            <p class='leipateksti'>Unlike the first film, this one rarely showed the use of the Turtles' weapons. They instead fight bare-fisted for much of the film as part of an attempt to tone down the violence 
+                                of the previous movie.</p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-lg-2"></div>
+                        <div class='col-lg-3'>
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva3">
+                                <img src="images/movies/Turtles-1991_1.jpg" style="width: 200px; height: 200px;"></button>
+                            </button>
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-defaul btn-lg" data-toggle="modal" data-target="#leffakuva4">
+                                <img src="images/movies/Turtles-1991_2.jpg" style="width: 200px; height: 200px;">
+                            </button>
+                        </div>
+                        <div class='col-lg-3'>
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#leffakuva5">
+                                <img src="images/movies/Turtles-1991_3.jpeg" style="width: 200px; height: 200px">
+                            </button>
+                        </div>
+                        <div class="modal fade" id="leffakuva3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1991_1.jpg" style="width: 100%"></>
+                                        <p style="font-size: 100%">The film introduced two new villains: Tokka(on left) and Rahzar(on right, the furry one, yes) </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1991_2.jpg" style="width: 100%"></>
+                                        <p style="font-size: 100%">Turtle Jam time!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1991)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1991_3.jpeg"></>
+
+                                        <p>Sensei Splinter</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="headerstyle" style='margin-top: 10em;'>Teenage Mutant Ninja Turtles III (1993)</h1>
+                    <div class='row'>
+                        <div class='col-lg-4'></div>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#juliste3">
+                            <img src="images/movies/Turtles-1993_.jpg">
+                        </button> 
+
+                        <div class="modal fade" id="juliste3" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style='text-align: center'>
+                                        <button type="button" class="close" data-dismiss="modal" arial-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="MyModalLabel">Teenage Mutant Ninja Turtles III</h4>
+                                    </div>
+                                    <div class="modal-body" style='text-align: center'>
+                                        <img src="images/movies/Turtles-1993_.jpg"></>
+                                        <p></p>
+                                        <p>The last part of the original trilogy!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <p></p>
+                        <p></p>
+                        <div class="col-lg-4"></div>
+                        <div class='col-lg-7'>
+                            <table class="table table-bordered" style="width: 50%; font-family: Arial; color: #f7ecb5">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left"><b>Ratings</b></td>
+                                        <td>IMDB: 4.8 / 10</td>
+                                        <td>Rotten Tomatoes: 2.7 / 5.0 </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left"><b>Budget</b></td>
+                                        <td colspan="2">$21,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left"><b>Release date</b></td>
+                                        <td>March 19th</td>
+                                        <td>1993</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <p class="leipateksti"><i><b>Plot and description taken from <a href="http://turtlepedia.wikia.com/wiki/Teenage_Mutant_Ninja_Turtles_II:_The_Secret_of_the_Ooze">Turtlepedia.com</a></i></b></p>
+
+                            <p class="leipateksti">Teenage Mutant Ninja Turtles III, also called TMNT III, is a 1993 film. When the film was released on DVD it got the subtitle Turtles in Time.
+                            </p>
+                            <p class="leipateksti">In TMNT III, April O'Neil is accidentally sent back to feudal Japan and a man, with the same scepter that April had, from feudal Japan is sent to New York. 
+                                The Turtles take his scepter and go to Japan to save April.</p>
+                            <p class="leipateksti">This film was heavily criticized. Common criticism include the cartoon-like feel of the film, the unrealistic plot, and the lack of combat. Another common complaint is the low quality of
+                                the Turtles' costumes and Splinter's puppetry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva6">
+                                <img src="images/movies/Turtles-1993_1.png" style="width: 200px; height: 200px;"></button>
+                            </button>
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-defaul btn-lg" data-toggle="modal" data-target="#leffakuva7">
+                                <img src="images/movies/Turtles-1993_2.jpg" style="width: 200px; height: 200px;">
+                            </button>
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva8">
+                                <img src="images/movies/Turtles-1993_3.jpg" style="width: 200px; height: 200px">
+                            </button>
+                        </div>
+
+
+                        <div class="modal fade" id="leffakuva6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1993_1.png" style="width: 100%"></>
+                                        <p style="font-size: 100%">The low quality of Turtles costumes and Splinter received criticism. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1990)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1993_2.jpg" style="width: 100%"></>
+                                        <p style="font-size: 100%">Feodal Turtles!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (1991)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-1993_3.jpg" style="width: 100%"></>
+
+                                        <p>Time for action!</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article id="newmovies" style="margin-top: 10em">
+                    <h1 class="headerstyle">
+                        Teenage Mutant Ninja Turtles (2014 Reboot)
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-4"></div>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva10">
+                            <img src="images/movies/Turtles-2014_.jpg" alt="turtlePOWER"></button>
+                        </button>
+                        <div class="modal fade" id="leffakuva10" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style='text-align: center'>
+                                        <button type="button" class="close" data-dismiss="modal" arial-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="MyModalLabel">Teenage Mutant Ninja Turtles III</h4>
+                                    </div>
+                                    <div class="modal-body" style='text-align: center'>
+                                        <img src="images/movies/Turtles-2014_.jpg"></>
+                                        <p></p>
+                                        <p>Reboot of the original films!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+
+                        <p></p>
+                        <p></p>
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-7">
+                            <table class="table table-bordered" style="width: 50%; font-family: Arial; color: #f7ecb5">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left"><b>Ratings</b></td>
+                                        <td>IMDB: 5.9 / 10.0</td>
+                                        <td>Rotten Tomatoes: 3.3 / 5.0</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left"><b>Budget</b></td>
+                                        <td colspan="2">$125,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left"><b>Release date</b></td>
+                                        <td>August 8th</td>
+                                        <td>2014</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <p class="leipateksti"><i><b>Plot and description taken from <a href="http://turtlepedia.wikia.com/wiki/Teenage_Mutant_Ninja_Turtles_II:_The_Secret_of_the_Ooze">Turtlepedia.com</a></b></i></p>
+
+                            <p class="leipateksti">Teenage Mutant Ninja Turtles is the fifth film in the series and also a reboot that was released on August 8, 2014. The film was produced by Scott Mednick, 
+                                Galen Walker and Michael Bay's production company Platinum Dunes.
+                            </p>
+                            <p class="leipateksti">Darkness has settled over New York City as Shredder and his evil Foot Clan have an iron grip on everything from the police to the politicians. The future is grim until four unlikely outcast brothers 
+                                rise from the sewers and discover their destiny as Teenage Mutant Ninja Turtles. The Turtles must work with fearless reporter
+                                April O'Neil and her cameraman Vern Fenwick to save the city and unravel Shredder's diabolical plan.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 25px;">
+                        <div class='col-lg-2'></div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva12">
+                                <img src="images/movies/Turtles-2014_2.jpg" style="width: 200px; height: 200px;"></button>
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-defaul btn-lg" data-toggle="modal" data-target="#leffakuva13">
+                                <img src="images/movies/Megan-fox_1.jpg" style="width: 200px; height: 200px;">
+                            </button>
+                        </div>
+                        <div class='col-lg-3'>
+                            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva14">
+                                <img src="images/movies/Megan-fox_3.jpg" style="width: 200px; height: 200px">
+                            </button>
+                        </div>
+
+
+                        <div class="modal fade" id="leffakuva12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (2014)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Turtles-2014_2.jpg" style='width: 100%'></>
+                                        <p style="font-size: 100%">Turtles now look like Marcus from Fallout 2. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (2014)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Megan-fox_1.jpg" style='width: 100%'></>
+                                        <p style="font-size: 100%">Megan Fox starred as April O'Neil</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="leffakuva14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Teenage Mutant Ninja Turtles (2014)</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/movies/Megan-fox_3.jpg" style='width: 100%'></>
+
+                                        <p>Did I mention Megan Fox already?</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="headerstyle" style='margin-top:10em' >
+                        Teenage Mutant Ninja Turtles: Out of the Shadows (2016)
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-4"></div>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#leffakuva15">
+                            <img src="images/movies/Turtles-2016_.jpg" alt="turtlePOWER"></button>
+                        </button>
+                        <div class="modal fade" id="leffakuva15" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style='text-align: center'>
+                                        <button type="button" class="close" data-dismiss="modal" arial-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="MyModalLabel">Teenage Mutant Ninja Turtles: Out of the Shadows (2016)</h4>
+                                    </div>
+                                    <div class="modal-body" style='text-align: center'>
+                                        <img src="images/movies/Turtles-2016_.jpg"></>
+                                        <p></p>
+                                        <p>Poster of the upcoming new movie!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+
+                    <p></p>
+                    <p></p>
+                    <div class="row">
+                        <div class='col-lg-4'></div>
+                        <div class='col-lg-7'>
+                            <table class="table table-bordered" style="width: 50%; font-family: Arial; color: #f7ecb5">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left"><b>Ratings</b></td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left"><b>Budget</b></td>
+                                        <td colspan="2">n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left"><b>Release date</b></td>
+                                        <td>June 3</td>
+                                        <td>2016</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/VerticalNavigation.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/jquery.nail.min.js">

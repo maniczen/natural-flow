@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TMNT</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+  <link href="css/movies.css" rel="stylesheet" type="text/css">
+
+
+  <style>
+    .jumbotron {
+      background: url(images/pizza_bg.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 186px;
+      margin: auto;
+      -webkit-filter: grayscale(40%);
+      filter: grayscale(40%);
+      margin-bottom: 50;
+      box-shadow: 0 0 30px black;
+      padding: 0 15px 0 15px;
+    }
+
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+    }
+
+    div.carousel {
+      width: 80%;
+      margin: auto;
+    }
+
+    .fa-arrow-left {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+    }
+
+    .fa-arrow-right {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+    }
+
+    h3 {
+      font-size: 3.225rem;
+      text-shadow: 2px 2px #000000;
+    }
+
+    p {
+      font-size: 1.525rem;
+      text-shadow: 2px 2px #000000;
+    }
+
+    div.img {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #0d0d0d;
+      float: left;
+      width: 320px;
+      padding: 5px;
+    }
+
+    div.img:hover {
+      border: 2px solid #777;
+    }
+
+    div.img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    div.desc {
+      padding: 10px;
+      text-align: center;
+      background-color: #ffffff;
+      height: 250px;
+    }
+
+    div.modal-header {
+      text-align: center;
+      background-color: #0b0e0b
+    }
+
+    div.modal-body {
+      background-color: #4fb04f;
+      color: #d6b978;
+      padding: 5px;
+    }
+
+    div.modal-body img {
+      padding: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    div.modal-desc {
+      padding-top: 10px;
+      text-align: center;
+      background-color: #0b1d07;
+      color: #d6b978;
+      height: 100px;
+    }
+
+    footer {
+      background-color: #0c0a0e;
+      font-family: "M+ 1mn", "VT323", monospace;
+      font-size: 1.95vmax;
+      line-height: 1.75em;
+      overflow: hidden;
+    }
+
+    .quote {
+      cursor: default;
+      color: #00331a;
+      margin: 0 auto 0;
+      max-width: 102vw;
+      -webkit-perspective: 1000vmin;
+      perspective: 1000vmin;
+      width: 53rem;
+    }
+
+    .quote span {
+      border-radius: 0.3em;
+      display: inline-block;
+      padding: 0 0.25em;
+      margin: 0.1em 0.1em;
+      -webkit-transform: translateZ(-500vmin) rotateX(90deg);
+      transform: translateZ(-500vmin) rotateX(90deg);
+      -webkit-transition: background 2s ease-in, color 5s ease-out, text-shadow 0.5s ease-out, -webkit-transform 15s ease-in;
+      transition: background 2s ease-in, color 5s ease-out, text-shadow 0.5s ease-out, -webkit-transform 15s ease-in;
+      transition: background 2s ease-in, color 5s ease-out, text-shadow 0.5s ease-out, transform 15s ease-in;
+      transition: background 2s ease-in, color 5s ease-out, text-shadow 0.5s ease-out, transform 15s ease-in, -webkit-transform 15s ease-in;
+    }
+
+    .quote .highlight,
+    .quote span:hover {
+      background: rgba(0, 255, 128, 0.1);
+      color: #80ffc0;
+      text-shadow: 0 0 0.6em #00ff80;
+      -webkit-transform: translateZ(0) rotateX(0deg);
+      transform: translateZ(0) rotateX(0deg);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      z-index: 9001;
+    }
+  </style>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="TMNT" />
+  <meta name="msapplication-TileColor" content="#146600" />
+  <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <center>
+      <img src="images/tmnt_logo.png" width="40%" height="40%">
+    </center>
+  </div>
+
+  <div id="contentWrapper">
+    <div id="contentLeft">
+      <ul id="leftNavigation">
+        <li class="active"> <a href="index.html"><i class="fa fa-info-circle leftNavIcon"></i> About TMNT</a>
+          <ul>
+            <li> <a href="index.html#history"><i class="fa fa-angle-right leftNavIcon"></i> TMNT History</a> </li>
+            <li> <a href="index.html#contact"><i class="fa fa-angle-right leftNavIcon"></i> Contact the Turtles</a> </li>
+            <li> <a href="index.html#team"><i class="fa fa-angle-right leftNavIcon"></i> The TMNT Team</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="characters.html"><i class="fa fa-male leftNavIcon"></i> Characters</a>
+          <ul>
+            <li> <a href="characters.html#leonardo"><i class="fa fa-angle-right leftNavIcon"></i> Leonardo</a> </li>
+            <li> <a href="characters.html#donatello"><i class="fa fa-angle-right leftNavIcon"></i> Donatello</a> </li>
+            <li> <a href="characters.html#rafaello"><i class="fa fa-angle-right leftNavIcon"></i> Rafaello</a> </li>
+            <li> <a href="characters.html#michelangelo"><i class="fa fa-angle-right leftNavIcon"></i> Michelangelo</a> </li>
+            <li> <a href="characters.html#turtletest"><i class="fa fa-question leftNavIcon"></i> Test which Turtle are you</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="comics.html"><i class="fa fa-book leftNavIcon"></i> Comics</a>
+          <ul>
+            <li> <a href="comics.html#80s"><i class="fa fa-angle-right leftNavIcon"></i> 1980's</a> </li>
+            <li> <a href="comics.html#90s"><i class="fa fa-angle-right leftNavIcon"></i> 1990's</a> </li>
+            <li> <a href="comics.html#2ks"><i class="fa fa-angle-right leftNavIcon"></i> 2000 -></a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="movies.html"><i class="fa fa-film leftNavIcon"></i> Movies</a>
+          <ul>
+            <li> <a href="movies.html#1stmovies"><i class="fa fa-angle-right leftNavIcon"></i> First trilogy</a> </li>
+            <li> <a href="movies.html#newmovies"><i class="fa fa-angle-right leftNavIcon"></i> New movies</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="tv.html"><i class="fa fa-tv leftNavIcon"></i> TV</a>
+          <ul>
+            <li> <a href="tv.html#tmntseries"><i class="fa fa-angle-right leftNavIcon"></i> Teenage Mutant Ninja Turtles Shows</a> </li>
+            <li> <a href="tv.html#otherseries"><i class="fa fa-angle-right leftNavIcon"></i> Other Series</a> </li>
+          </ul>
+        </li>
+        <li class="active"> <a href="games.html"><i class="fa fa-gamepad leftNavIcon"></i> Games</a>
+        </li>
+    </div>
+
+    <div id="contentRight">
+
+
+
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/index/characters.jpg" alt="characters">
+            <div class="carousel-caption">
+              <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+                <h3>Characters</h3>
+                <p>Find Information About The TMNT Characters Here! ..</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/index/comics.jpg" alt="Comics">
+            <div class="carousel-caption">
+              <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+                <h3>The Comic Books</h3>
+                <p>I have always been a TMNT Comic fan</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/index/movies.jpg" alt="Movies">
+            <div class="carousel-caption">
+              <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+                <h3>Movies</h3>
+                <p>Teenage Mutant Ninja Turtles: Out of the Shadows</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/index/tv.jpg" alt="TV">
+            <div class="carousel-caption">
+              <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+                <h3>TV</h3>
+                <p>Teenage Mutant Ninja Turtles (1987 to 1996)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="fa fa-arrow-left " aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="fa fa-arrow-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+
+
+      <div class="col-md-1"></div>
+      <div id="history" class="col-md-12">
+
+        <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+          <center>
+            <br>
+            <br>
+            <h1 id="heading" class="headerstyle">History</h1></center>
+          <div class="img">
+            <a href="#history1" data-toggle="modal" data-target="#history1">
+              <img src="images/history/tmnt.jpg" alt="tmnt2">
+            </a>
+            <div class="desc">
+              Struggling artists Kevin Eastman and Peter Laird were living in Northampton, Massachusetts, when they came up with the Turtles in November 1983</div>
+
+          </div>
+
+
+
+          <!-- Modal -->
+          <div id="history1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="images/history/tmnt.jpg" alt="tmnt2">
+                    </a>
+                    <div class="modal-desc">Struggling artists Kevin Eastman and Peter Laird were living in Northampton, Massachusetts, when they came up with the Turtles in November 1983. </div>
+                </div>
+                </center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <a href="#history2" data-toggle="modal" data-target="#history2">
+              <img src="images/history/tmnt2.jpg" alt="tmnt2">
+            </a>
+            <div class="desc">
+              In March 1984, Eastman and Laird created a new company, Mirage Studios, so named because there was no actual studio other than Laird’s living room.</div>
+
+          </div>
+
+
+
+          <!-- Modal -->
+          <div id="history2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="images/history/tmnt2.jpg" alt="tmnt2">
+                    </a>
+                    <div class="modal-desc">In March 1984, Eastman and Laird created a new company, Mirage Studios, so named because there was no actual studio other than Laird’s living room. </div>
+                </div>
+                </center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <a href="#history3" data-toggle="modal" data-target="#history3">
+              <img src="images/history/tmnt3.jpg" alt="tmnt2">
+            </a>
+            <div class="desc">
+              TMNT ran under the Mirage Studios banner from 1984 – 1995 for 75 regular issues, as well as dozens of mini-series, one-shots, and limited series spin-off titles.</div>
+
+          </div>
+
+
+
+          <!-- Modal -->
+          <div id="history3" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="images/history/tmnt3.jpg" alt="tmnt3">
+                    </a>
+                    <div class="modal-desc">TMNT ran under the Mirage Studios banner from 1984 – 1995 for 75 regular issues, as well as dozens of mini-series, one-shots, and limited series spin-off titles.</div>
+                </div>
+                </center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <a href="#history4" data-toggle="modal" data-target="#history4">
+              <img src="images/history/tmnt9.jpg" alt="tmnt2">
+            </a>
+            <div class="desc">
+              From 1988 – 1997, Playmates produced around 400 TMNT figures, as well as dozens of vehicles and playsets. For the first four years of Turtlemania, about $1.1 billion worth of toys were sold, making the Turtles the #3 top-selling toy figures ever at the
+              time, behind only G.I. Joe and Star Wars.</div>
+
+          </div>
+
+
+
+          <!-- Modal -->
+          <div id="history4" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="images/history/tmnt9.jpg" alt="tmnt4">
+                    </a>
+                    <div class="modal-desc">From 1988 – 1997, Playmates produced around 400 TMNT figures, as well as dozens of vehicles and playsets. For the first four years of Turtlemania, about $1.1 billion worth of toys were sold, making the Turtles the #3 top-selling toy
+                      figures ever at the time, behind only G.I. Joe and Star Wars.</div>
+                </div>
+                </center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <a href="#history5" data-toggle="modal" data-target="#history5">
+              <img src="images/history/tmnt4.jpg" alt="tmnt2">
+            </a>
+            <div class="desc">
+              In 2007 came the computer-animated film TMNT. On a budget of $34 million, the film made $95 million at the box office. The Turtles returned in 2014 as a live-action film directed by Jonathan Liebesman (Battle: Los Angeles, Wrath of the Titans) from producer
+              Michael Bay.</div>
+
+          </div>
+
+
+
+          <!-- Modal -->
+          <div id="history5" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="images/history/tmnt4.jpg" alt="tmnt4">
+                    </a>
+                    <div class="modal-desc">In 2007 came the computer-animated film TMNT. On a budget of $34 million, the film made $95 million at the box office. The Turtles returned in 2014 as a live-action film directed by Jonathan Liebesman (Battle: Los Angeles, Wrath of
+                      the Titans) from producer Michael Bay.</div>
+                </div>
+                </center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <a href="#history6" data-toggle="modal" data-target="#history6">
+              <img src="images/history/tmnt5.jpg" alt="tmnt2">
+            </a>
+            <div class="desc">
+              Eastman and Laird heard more than once that, “If four Ninja Turtles are good, then five Ninja Turtles must be better!” Although they resisted the idea, the duo did come up with a fifth Turtle concept that almost came to be.</div>
+
+          </div>
+
+
+
+          <!-- Modal -->
+          <div id="history6" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <img src="images/history/tmnt5.jpg" alt="tmnt4">
+                    </a>
+                    <div class="modal-desc">Eastman and Laird heard more than once that, “If four Ninja Turtles are good, then five Ninja Turtles must be better!” Although they resisted the idea, the duo did come up with a fifth Turtle concept that almost came to be.</div>
+                </div>
+                </center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="contact">
+        <section style="font-family: 'Fredoka One', Trebuchet, Arial, sans-serif; color: #4fb04f">
+          <center>
+            <h1 class="headerstyle">Contact the Turtles</h1>
+            <br>
+            <br>
+            <form method="post" action="fanipostivastaanotettu.php">
+              Send fanmail to the Turtles!
+              <br>
+              <textarea name="message" rows="10" cols="100" placeholder="Write your message here."></textarea>
+              <br>
+              <input type="submit" value="Send">
+            </form>
+          </center>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <footer>
+        <div class="quote" id="team">Teenage Mutant Ninja Turtles site by Team TMNT. We are Kukkis, Mikko, Tatu & Tomi</div>
+        <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-f961f59a28ef4fd551736b43f94620b5.js"></script>
+      </footer>
+
+      <script>
+        var eQuote = document.querySelector("#team");
+
+        var regex = /\ /;
+        // save the original paragraph as array of words
+        // regex = /[,.?!;:]/; /* Uncomment for sentences */
+        var aQuote = eQuote.innerHTML.split(regex);
+
+        // wrap each word with a span
+        eQuote.innerHTML = "";
+        for (var word in aQuote) {
+          eQuote.innerHTML += "<span>" + aQuote[word] + "</span>";
+        }
+        // ...and save them for later
+        var eWords = document.querySelectorAll("span");
+
+
+        var repeat = setInterval(function() {
+          if (Math.random() > 0.85) fClearAllHighlights(eQuote);
+          fHighlightRandomWord(eWords);
+        }, 275);
+
+        function fHighlightRandomWord(e) {
+          var iRandom = Math.floor(Math.random() * e.length);
+          e[iRandom].classList.add("highlight");
+        }
+
+        function fClearAllHighlights(e) {
+          var nlHighlights = e.querySelectorAll(".highlight");
+          // convert the nodeList into an array
+          var aHighlights = Array.prototype.slice.call(nlHighlights);
+          // remove .highlight from the spans which have it
+          Array.prototype.map.call(aHighlights, function() {
+            arguments[0].classList.remove("highlight");
+          });
+        }
+        //@ sourceURL=pen.js
+      </script>
+
+
+      <script>
+        if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+        }
+      </script>
+      <br>
+      <br>
+
+
+
+
+</body>
+
+</html>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/VerticalNavigation.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/jquery.nail.min.js">
