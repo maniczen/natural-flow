@@ -1,0 +1,100 @@
+/* OHJELMOINTIPELIT.CSS */
+
+body{
+	width:100%;
+	height:100%;
+	background-color:#000000;
+}
+h2{
+	font-family: "Times New Roman", Times, serif;
+	word-wrap: break-word;
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+}
+.bodycontainer{
+	height:100%;
+	width:100%;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:3%;
+	padding-bottom:3%;
+	background-color:#000000;
+	background-image: url("../images/taustakuva.png"); /* CONTAINERIN TAUSTAKUVA */
+	background-repeat: repeat-y;
+}
+.row{
+	padding:3px;
+}
+.bg-1{
+	background-color: #08143D;
+	color: #ffffff;
+}
+.bg-2{
+	background-color: #5A2D01;
+	color: #ffffff;
+}
+.bg-3{
+	background-color: #014410;
+	color: #ffffff;
+}
+
+.bg-4{
+	background-color: #2f2f2f;
+	color: #ffffff;
+}
+.col-sm-3{
+	padding:0;
+	margin:0;
+}
+img{
+	height:100%;
+	width:100%;
+}
+.contentblock {
+	margin:8px;
+}
+.defaultborder{
+	border:solid;
+	border-color:#000000;
+	border-width:1px;
+	border-collapse:collapse;
+}
+.footer {
+  width: 100%;
+  height: 12%;
+  min-height:80px;
+  background-color: #000000;
+}
+.footerrow{
+	text-align:left;
+	font-style:italic;
+	font-size:11px;
+	margin-right:5px;
+	margin-left:5px;
+}
+.footer .col-sm-3 {
+	padding-left: 5px;
+	border-right: solid;
+	border-color: #111111;
+	border-width: 1px;
+}
+.footer p{
+	margin-top:0;
+	margin-bottom:0;
+	color:#aa0000;
+}
+.indexContent {
+	/*padding-left:5px;*/
+}
+.text-muted {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.navbutton {
+	background-color:#08143D;
+	border:1px solid #000000;
+}
+.navbutton h3 {
+	color:#ffffff;
+}
