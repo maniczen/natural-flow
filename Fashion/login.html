@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href="css/backcode.css" rel="stylesheet">
+	<title>Login</title>
+	   <style type="text/css">
+  	table { 
+		border:#61E718 1px solid;
+		width:60%;
+		border-collapse:collapse;
+		
+		cellpadding:10px;
+	}
+	table td, table th{
+		border:#61E718 1px solid;
+		padding:10px;
+		}
+	table a:link, table a:visited{
+		color:#000000;
+		text-decoration:none;
+		}
+	table th {
+		background-color:#B6EBE5;
+	    }
+
+	#buttonId {
+		background-color:#B6EBE5}
+		
+		
+	.one {	
+		background-color:#F9F9F9
+	}
+	.two {
+		background-color:#EDEDED
+		}
+	.over {
+		background-color:#D2D2D2
+		}
+	#click {
+		background-color:#AFAFAF
+		}
+	.RightInfo, .WrongInfo {
+		display:none;
+		}
+	.RightInfo{
+		color:#00ff00;
+		}
+	.WrongInfo{
+		color:#ff0000;
+		}	
+
+
+  	var outColor;
+	function trColor()
+	{
+		var tableNode = document.getElementById("tableId");
+		var trs = tableNode.rows;	
+		//alert(trs.length);
+		
+		for(var x=1; x<trs.length-1; x++)
+		{
+			if(x%2 == 0)
+			{
+				trs[x].className = "one";
+			}
+			else 
+			{
+			    trs[x].className = "two";
+			}
+			
+			trs[x].onmouseover = function ()
+			{
+			   outColor = this.className;
+			   this.className = "over";
+			};
+			
+			trs[x].onmouseout = function ()
+			{
+				this.className = outColor;
+			};
+			
+			trs[x].onclick = function ()
+			{
+				if (this.id == "")
+				{
+					this.id = "click";
+				}	
+				else 
+				{
+					this.id = "";
+				}
+			};
+		}
+	
+	}
+	onload = function()
+	{
+		trColor();	
+	}
+	</style>
+	 
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>     
+		
+      </button>
+	  
+	        
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+	
+      <ul class="nav navbar-nav">
+	    <li><a href="index.html">POPULAR</a></li>
+        <li><a href="womens.html">WOMEN'S FASHION</a></li>
+		<li><a href="mens.html">MEN'S FASHION</a></li>
+        <li><a href="childrens.html">CHILDREN'S FASHION</a></li>
+      </ul>
+	    
+	  
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+	        <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Sign up </a></li>
+        <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<fieldset>
+<form action="#" method="post">
+  <table border="1" bordercolor="#000000" cellspacing="0" cellpadding="10" width="50%" align="center">
+    <tr>
+    	<th colspan="2" valign="middle"> <center> Login In Page </center></th>
+    </tr>
+    <tr>
+    	<td> Username:</td>
+        <td colspan="2"><input 	type="text" name="username"  maxlength="32"	onblur="checkUser()"/>
+        				<span id="usernameSpan" ></span>
+        </td>
+    </tr>
+    <tr>
+    	<td>Password:</td>
+        <td colspan="2"><input 	type="password" name="password"  maxlength="32" OnBlur="checkPassword()"/>
+                         <span id="passwordSpan" ></span>
+        				
+                        <!--<span id="RightPasswordId" class="RightInfo" >Password format correct</span>
+                        <span id="WrongPasswordId" class="WrongInfo" >Password format incorrect</span>
+                        -->
+        </td>
+    </tr>
+    
+    <tr>
+    	<td colspan="2" align="center">
+        	<input type="submit" value="Sign In" />
+            <input type="reset"  value="Reset Info" /> 
+        </td>
+    </tr>
+    
+</table>
+
+
+
+</form>
+</fieldset>
+
+  
+</body>
+</html>
+  
